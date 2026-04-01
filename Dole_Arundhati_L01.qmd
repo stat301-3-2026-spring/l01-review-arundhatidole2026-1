@@ -1,8 +1,8 @@
 ---
 title: "L01 Review"
 subtitle: "Data Science 3 with R (STAT 301-3)"
-author: "YOUR NAME"
-pagetitle: "L01 YOUR NAME"
+author: "ARUNDHATI DOLE"
+pagetitle: "L01 ARUNDHATI DOLE"
 date: today
 
 format:
@@ -28,7 +28,7 @@ citation-location: margin
 
 To link to your github **repo**sitory, appropriately edit the example link below. Meaning replace `https://your-github-repo-url` with your github repo url. Suggest verifying the link works before submitting.
 
-[https://your-github-repo-url](https://your-github-repo-url)
+[Arundhati's Github Link](https://github.com/stat301-3-2026-spring/l01-review-arundhatidole2026-1)
 :::
 
 ## Overview
@@ -46,7 +46,7 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+
 
 :::
 
@@ -57,7 +57,7 @@ Explain the difference between supervised and unsupervised learning.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A supervised model is given more guidance, whereas an unsupervised model learns on its own. In unsupervised learning, there is no target variable. 
 
 :::
 
@@ -70,7 +70,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Descriptive models provide a summary of certain characteristics of the data, like the average, the range, or the spread of the data. These types of models emphasize some trend or artifact of data. An example might be analyzing the statistics behind test scores in a class.
 
 :::
 
@@ -79,7 +79,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+An inferential model produces a decision for a research question or tests a hypothesis, such as examining which factors are the most important in determining an outcome. For example, you may be looking at which factors play the most role in determining test scores, whether that is hours of sleep, hours spent studying, hours spent exercising e.t.c. 
 
 :::
 
@@ -88,7 +88,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Predictive models produce the most accurate prediction possible for new data, such as predicting what grade each student will receive on the test. 
 
 :::
 
@@ -103,7 +103,7 @@ What does it mean to be a mechanistic model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A mechanistic model has a definite equation, like Y = B0 + B1X1 + B2X2 + ... These models do not require a lot of data and are easier to interpret. 
 
 :::
 
@@ -114,7 +114,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+An empirical model has no assumptions about the form of the function f(x). These tend to be more flexible and have better predictive performance. However, they take longer and are at a higher risk of overfitting. 
 
 :::
 
@@ -136,7 +136,7 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A mechanistic model is easier to interpret. 
 
 :::
 
