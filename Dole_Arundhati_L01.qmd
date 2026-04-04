@@ -46,7 +46,14 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-
+First, decide whether this is a regression or classification problem. 
+Divide the data set into training and testing sets.
+Set up folds and repeats. 
+Then create recipes for your models. 
+Define and fit the appropriate models for the problem, also making sure to tune the models. 
+Use a set of models which is appropriate for the problem, then select the model with the best metrics, such as the highest accuracy or lowest rmse. 
+Test the testing data with the best model.
+Build a confusion matrix to analyze the final results. 
 
 :::
 
@@ -57,7 +64,8 @@ Explain the difference between supervised and unsupervised learning.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-A supervised model is given more guidance, whereas an unsupervised model learns on its own. In unsupervised learning, there is no target variable. 
+Unsupervised models are not given a target variable, use unlabelled data, and may use techniques such as clustering, association, or dimensionality reduction. 
+On the other hand, a supervised model is given more guidance, usually using pre-categorized data and either classification or regression models. 
 
 :::
 
@@ -79,7 +87,7 @@ Descriptive models provide a summary of certain characteristics of the data, lik
 ::: {.callout-tip icon="false"}
 ## Solution
 
-An inferential model produces a decision for a research question or tests a hypothesis, such as examining which factors are the most important in determining an outcome. For example, you may be looking at which factors play the most role in determining test scores, whether that is hours of sleep, hours spent studying, hours spent exercising e.t.c. 
+An inferential model produces a decision for a research question or tests a hypothesis, and depend on underlying assumptions. For example, you may be looking at which factors play the most role in determining test scores, whether that is hours of sleep, hours spent studying, hours spent exercising e.t.c. 
 
 :::
 
@@ -103,7 +111,7 @@ What does it mean to be a mechanistic model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-A mechanistic model has a definite equation, like Y = B0 + B1X1 + B2X2 + ... These models do not require a lot of data and are easier to interpret. 
+A mechanistic model has a definite equation, like Y = B0 + B1X1 + B2X2 + ... These models do not require a lot of data and are easier to interpret. However, they have limited complexity, and the equation may not be a good fit. 
 
 :::
 
@@ -114,7 +122,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-An empirical model has no assumptions about the form of the function f(x). These tend to be more flexible and have better predictive performance. However, they take longer and are at a higher risk of overfitting. 
+An empirical model has no assumptions about the function f(x). These tend to be more flexible and have better predictive performance. However, they take longer and are at a higher risk of overfitting. 
 
 :::
 
@@ -125,7 +133,7 @@ How does the mechanistic and empirically driven model terminology relate to the 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+"Mechanistic models" are another term for parametric models, and "empirically driven models" are another term for nonparametric models. 
 
 :::
 
@@ -136,7 +144,7 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 ::: {.callout-tip icon="false"}
 ## Solution
 
-A mechanistic model is easier to interpret. 
+A mechanistic model is easier to interpret, since it follows a known equation. 
 
 :::
 
@@ -147,7 +155,7 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Empirically driven models usually offer more flexibility, since it does not assume a predefined function, and are more adaptable. Examples include decision trees, k-nearest neighbors, and spline regression. 
 
 :::
 
@@ -169,7 +177,7 @@ Explain the difference between a regression and classification machine learning 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A classification aims to sort observations into different categories, while a regression problem predicts a certain number. For instance, a regression problem might predict what will house prices be in ten years, while a classification problem might predict whether it will be warm or cold tomorrow. 
 
 :::
 
@@ -180,7 +188,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+It is useful to stratify by the target level because you want to make sure that you have a random mix of this variable in both the training and testing set. Otherwise, your results might be biased. The trainig set tests different model fits, tunes model hyperparamters, and looks at various feature engineering strategies. On the other hand, the test data set is solely used for evaluating the performance of the model. 
 
 :::
 
@@ -191,7 +199,7 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+
 
 :::
 
