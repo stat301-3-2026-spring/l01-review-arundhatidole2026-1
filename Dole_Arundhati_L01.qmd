@@ -96,7 +96,7 @@ An inferential model produces a decision for a research question or tests a hypo
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Predictive models produce the most accurate prediction possible for new data, such as predicting what grade each student will receive on the test. 
+Predictive models produce the most accurate forecast possible for new data, such as predicting what grade each student will receive on the test. 
 
 :::
 
@@ -166,7 +166,7 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+High bias means the model is making oversimplified assumptions, which means that it might be missing patterns. This results in underfitting of the data, which leads to low variance. Low bias means the model captures patterns well, but may be at risk for overfitting, which would lead to high variance. More complex, empirically driven models tend to have lower bias, and therefore, higher variance, while simpler, mechanistic models usually have higher bias and lower variance. 
 
 :::
 
@@ -177,7 +177,7 @@ Explain the difference between a regression and classification machine learning 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-A classification aims to sort observations into different categories, while a regression problem predicts a certain number. For instance, a regression problem might predict what will house prices be in ten years, while a classification problem might predict whether it will be warm or cold tomorrow. 
+A classification aims to sort observations into different categories, while a regression problem predicts a certain number. For instance, a regression problem might predict what house prices will be in ten years, while a classification problem might predict whether or not a house will be sold. 
 
 :::
 
@@ -188,7 +188,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ::: {.callout-tip icon="false"}
 ## Solution
 
-It is useful to stratify by the target level because you want to make sure that you have a random mix of this variable in both the training and testing set. Otherwise, your results might be biased. The trainig set tests different model fits, tunes model hyperparamters, and looks at various feature engineering strategies. On the other hand, the test data set is solely used for evaluating the performance of the model. 
+It is useful to stratify by the target level because you want to make sure that you have a random mix of this variable in both the training and testing set. Otherwise, your results might be biased. The training set tests different model fits, tunes model hyperparameters, and looks at various feature engineering strategies. On the other hand, the test data set is solely used for evaluating the performance of the model. 
 
 :::
 
@@ -199,8 +199,7 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-
-
+Resampling is when we select randomized cases from the original data sample with replacement in order to estimate the parameter multiple times. The observations that are selected are used to fit the model, and the non-selected ones are used to evaluate. We do this to improve the accuracy of estimates, form a quantitative measure of the model, and mitigate overfitting. 
 :::
 
 ### Question 8
@@ -210,7 +209,8 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Cross-validation involves mutually exclusive subsets, while bootstrapping involves sampling with replacement. This means that with cross-validation, we average the results, which can reduce variance. However, since the model is not trained on the full data set, it can miss patterns, meaning higher bias. With a bootstrap resampling procedure, the model is trained on the whole data set each time, so there is lower bias, which is why one might prefer bootstrap over cross-validation sampling. 
+
 
 :::
 
@@ -221,7 +221,7 @@ Briefly describe model tuning and why we use it.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Tuning is where we find the best set of hyperparameters by using the tuning function instead of manually setting our hyperparameters. This allows us to achieve the best performance for the model. 
 
 :::
 
@@ -232,7 +232,7 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Two common performance metrics when dealing with a regression ML problem are RMSE and MAE. 
 
 :::
 
@@ -241,7 +241,7 @@ What are two common performance metrics when dealing with a classification ML pr
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Two common performance metrics when dealing with a classification ML problem are accuracy and ROC_AUC. 
 
 :::
 
@@ -256,7 +256,7 @@ A company with a subscription based service (for example Netflix, Disney+, New Y
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+This is inferential because we are looking at how a specific variable (number of service calls) impacts the target variable (churn). This is not predictive because we are not coming up with a forecast for the data, only examining the relative importance of one variable in affecting churn. 
 
 :::
 
@@ -265,7 +265,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+This is predictive because we are forecasting a certain number, which is the likelihood that the customer will churn in the next month. This is not inferential because it is not answering a question about how important a certain variable is in affecting churn. It is forming a prediction for each customer. 
 
 :::
 
