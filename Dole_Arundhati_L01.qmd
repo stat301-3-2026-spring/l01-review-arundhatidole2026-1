@@ -52,7 +52,7 @@ Set up folds and repeats.
 Then create recipes for your models. 
 Define and fit the appropriate models for the problem, also making sure to tune the models. 
 Use a set of models which is appropriate for the problem, then select the model with the best metrics, such as the highest accuracy or lowest rmse. 
-Test the testing data with the best model.
+Train the best model, then test the best model using the testing set. 
 Build a confusion matrix to analyze the final results. 
 
 :::
@@ -64,8 +64,8 @@ Explain the difference between supervised and unsupervised learning.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Unsupervised models are not given a target variable, use unlabelled data, and may use techniques such as clustering, association, or dimensionality reduction. 
-On the other hand, a supervised model is given more guidance, usually using pre-categorized data and either classification or regression models. 
+Unsupervised models are not given a target variable, use unlabelled data, and may use techniques such as clustering, association, or dimensionality reduction. The goal of unsupervised models is to recognize patterns and structure. 
+On the other hand, a supervised model is given more guidance, usually using pre-categorized data and either classification or regression models. The goal of supervised models is prediction. 
 
 :::
 
@@ -78,7 +78,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Descriptive models provide a summary of certain characteristics of the data, like the average, the range, or the spread of the data. These types of models emphasize some trend or artifact of data. An example might be analyzing the statistics behind test scores in a class.
+Descriptive models provide a summary of certain characteristics of the data, like the median, the range, or the spread of the data. These types of models emphasize some trend in the data. An example might be analyzing the statistics behind test scores in a class.
 
 :::
 
@@ -87,7 +87,7 @@ Descriptive models provide a summary of certain characteristics of the data, lik
 ::: {.callout-tip icon="false"}
 ## Solution
 
-An inferential model produces a decision for a research question or tests a hypothesis, and depend on underlying assumptions. For example, you may be looking at which factors play the most role in determining test scores, whether that is hours of sleep, hours spent studying, hours spent exercising e.t.c. 
+An inferential model produces a decision for a research question or tests a hypothesis, and depend on underlying assumptions. For example, you may be looking at which factors are the most important in determining test scores, whether that is hours of sleep, hours spent studying, hours spent exercising e.t.c. 
 
 :::
 
@@ -122,7 +122,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-An empirical model has no assumptions about the function f(x). These tend to be more flexible and have better predictive performance. However, they take longer and are at a higher risk of overfitting. 
+An empirical model has no assumptions about the function f(x). These tend to be more flexible and have better predictive performance. However, they take longer and are at a higher risk of overfitting. Examples include decision trees and KNN models. 
 
 :::
 
@@ -155,7 +155,7 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Empirically driven models usually offer more flexibility, since it does not assume a predefined function, and are more adaptable. Examples include decision trees, k-nearest neighbors, and spline regression. 
+Empirically driven models usually offer more flexibility, since they do not assume a predefined function, and are more adaptable. For example, the random forest model creates many different decision trees, with each tree looking at a different subset of features, and each tree makes a prediction. This is a more adaptable model than a mechanistic model. 
 
 :::
 
@@ -166,7 +166,8 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 ::: {.callout-tip icon="false"}
 ## Solution
 
-High bias means the model is making oversimplified assumptions, which means that it might be missing patterns. This results in underfitting of the data, which leads to low variance. Low bias means the model captures patterns well, but may be at risk for overfitting, which would lead to high variance. More complex, empirically driven models tend to have lower bias, and therefore, higher variance, while simpler, mechanistic models usually have higher bias and lower variance. 
+High bias means the model is making oversimplified assumptions, which means that it might be missing patterns. This results in underfitting of the data, which leads to low variance. 
+Low bias means the model captures patterns well, but may be at risk for overfitting, which would lead to high variance. More complex, empirically driven models tend to have lower bias, and therefore, higher variance, while simpler, mechanistic models usually have higher bias and lower variance. 
 
 :::
 
@@ -177,7 +178,7 @@ Explain the difference between a regression and classification machine learning 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-A classification aims to sort observations into different categories, while a regression problem predicts a certain number. For instance, a regression problem might predict what house prices will be in ten years, while a classification problem might predict whether or not a house will be sold. 
+A classification ML aims to sort observations into different categories, while a regression problem predicts a certain number. For instance, a regression problem might predict what house prices will be in ten years, while a classification problem might predict whether or not a house will be sold. 
 
 :::
 
@@ -188,7 +189,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ::: {.callout-tip icon="false"}
 ## Solution
 
-It is useful to stratify by the target level because you want to make sure that you have a random mix of this variable in both the training and testing set. Otherwise, your results might be biased. The training set tests different model fits, tunes model hyperparameters, and looks at various feature engineering strategies. On the other hand, the test data set is solely used for evaluating the performance of the model. 
+It is useful to stratify by the target level because you want to make sure that you have a random mix of this variable in both the training and testing set. Otherwise, your results might be biased. With categorical data, stratifying by the target variable ensures that we maintains the same proportions. With numerical data, stratified sampling is helpful when the distribution is skewed, imbalanced, or multimodal. 
 
 :::
 
