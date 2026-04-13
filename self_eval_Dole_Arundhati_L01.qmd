@@ -62,7 +62,7 @@ Build a confusion matrix to analyze the final results.
 ::: {.callout-tip icon="false"}
 ## Grade
 
-Grade: 4.5/5
+Grade: 4/5
 
 This response is correct; however, I had to look back at my final project files to remind myself of the exact steps. When I tried to do it myself at first, I got a little confused with the last couple steps of training and testing the best model. 
 
@@ -77,7 +77,7 @@ Explain the difference between supervised and unsupervised learning.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Unsupervised models are not given a target variable, use unlabelled data, and may use techniques such as clustering, association, or dimensionality reduction. The goal of unsupervised models is to recognize patterns and structure. 
+Unsupervised models are not given a target variable, use unlabeled data, and may use techniques such as clustering, association, or dimensionality reduction. The goal of unsupervised models is to recognize patterns and structure. 
 On the other hand, a supervised model is given more guidance, usually using pre-categorized data and either classification or regression models. The goal of supervised models is prediction. 
 
 :::
@@ -87,7 +87,7 @@ On the other hand, a supervised model is given more guidance, usually using pre-
 ::: {.callout-tip icon="false"}
 ## Grade
 
-Grade: 4.5/5
+Grade: 4/5
 
 This response is correct, but I had to look back at my notes. I accurately covered what supervised and unsupervised learning are, as well as the goals of each. 
 :::
@@ -127,7 +127,7 @@ Predictive models produce the most accurate forecast possible for new data, such
 ::: {.callout-tip icon="false"}
 ## Grade
 
-Grade: 4.5/5
+Grade: 4/5
 
 This response is correct, but I had to look at my notes. 
 
@@ -260,7 +260,7 @@ It is useful to stratify by the target level because you want to make sure that 
 ::: {.callout-tip icon="false"}
 ## Grade
 
-Grade: 4.5/5
+Grade: 4/5
 
 This response is correct, but I had to look at my notes. 
 
@@ -309,7 +309,7 @@ Cross-validation involves mutually exclusive subsets, while bootstrapping involv
 ::: {.callout-tip icon="false"}
 ## Grade
 
-Grade: 2.5/5
+Grade: 2/5
 
 Actually, we use bootstrap resampling when we want a low variance, and cross-validation if we want low bias. Since we can run many more bootstraps than folds, we obtain a lower variance with bootstrap resampling. 
 
@@ -336,7 +336,7 @@ Tuning is where we find the best set of hyperparameters by using the tuning func
 ::: {.callout-tip icon="false"}
 ## Grade
 
-Grade: 3.5/5
+Grade: 3/5
 
 This response could be more specific. Also, I used my notes. 
 Some examples of hyperparameters are learning rate, neighbors, and penalty. We train using many different hyperparameter values to find the combination that yields the best results, such as the lowest RMSE, or the highest accuracy.  
