@@ -62,7 +62,7 @@ Build a confusion matrix to analyze the final results.
 ::: {.callout-tip icon="false"}
 ## Grade
 
-Grade: 4/5
+Grade: 4.5/5
 
 This response is correct; however, I had to look back at my final project files to remind myself of the exact steps. When I tried to do it myself at first, I got a little confused with the last couple steps of training and testing the best model. 
 
@@ -80,6 +80,16 @@ Explain the difference between supervised and unsupervised learning.
 Unsupervised models are not given a target variable, use unlabelled data, and may use techniques such as clustering, association, or dimensionality reduction. The goal of unsupervised models is to recognize patterns and structure. 
 On the other hand, a supervised model is given more guidance, usually using pre-categorized data and either classification or regression models. The goal of supervised models is prediction. 
 
+:::
+
+
+
+::: {.callout-tip icon="false"}
+## Grade
+
+Grade: 4.5/5
+
+This response is correct, but I had to look back at my notes. I accurately covered what supervised and unsupervised learning are, as well as the goals of each. 
 :::
 
 ### Question 3 
@@ -112,6 +122,18 @@ An inferential model produces a decision for a research question or tests a hypo
 Predictive models produce the most accurate forecast possible for new data, such as predicting what grade each student will receive on the test. 
 
 :::
+
+
+::: {.callout-tip icon="false"}
+## Grade
+
+Grade: 4.5/5
+
+This response is correct, but I had to look at my notes. 
+
+:::
+
+
 
 ### Question 4 
 
@@ -184,6 +206,21 @@ Low bias means the model captures patterns well, but may be at risk for overfitt
 
 :::
 
+
+
+::: {.callout-tip icon="false"}
+## Grade
+
+Grade: 4/5
+
+This response is mostly correct, but I had to look at my notes. Also, the answer to part f, specifically the part that explains why mechanistic models have lower variance and higher bias, and why empirically driven ones have higher variance and lower bias, could be better. Using a mechanistic model results in lower variance because the mechanisms of the model cannot change a lot, but higher bias, because the equation may not exactly match the data. On the other hand, in an empirically driven model, the "frame" can be molded to fit the data, which leads to higher variance, since the model can change a lot, but low bias because the model can more accurately fit the data. 
+
+:::
+
+
+
+
+
 ### Question 5 
 
 Explain the difference between a regression and classification machine learning (ML) problems.
@@ -194,6 +231,19 @@ Explain the difference between a regression and classification machine learning 
 A classification ML aims to sort observations into different categories, while a regression problem predicts a certain number. For instance, a regression problem might predict what house prices will be in ten years, while a classification problem might predict whether or not a house will be sold. 
 
 :::
+
+
+::: {.callout-tip icon="false"}
+## Grade
+
+Grade: 5/5
+
+This response is correct. 
+
+:::
+
+
+
 
 ### Question 6 
 
@@ -206,6 +256,18 @@ It is useful to stratify by the target level because you want to make sure that 
 
 :::
 
+
+::: {.callout-tip icon="false"}
+## Grade
+
+Grade: 4.5/5
+
+This response is correct, but I had to look at my notes. 
+
+:::
+
+
+
 ### Question 7 
 
 Briefly describe how v-fold cross validation with repeats is used to estimate test RMSE. Also provide an explanation of why we use it. 
@@ -215,6 +277,22 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 
 Resampling is when we select randomized cases from the original data sample with replacement in order to estimate the parameter multiple times. The observations that are selected are used to fit the model, and the non-selected ones are used to evaluate. We do this to improve the accuracy of estimates, form a quantitative measure of the model, and mitigate overfitting. 
 :::
+
+
+
+::: {.callout-tip icon="false"}
+## Grade
+
+Grade: 3/5
+
+This response is missing a lot of important points about resampling, and could expand more on the advantages of it. Also, I had to use my notes. 
+Firstly, the response missed some of the technical explanation of what resampling. First, the data is split into v folds of data. The subsetted fold is reserved for testing, and the remaining data is used for training. The process is then repeated r times. In total, there are v*r sample estimates of RMSE, and these estimats are averaged to get a final overall estimate. 
+The advantage is that the model is trained and evaluated on multiple subsets of the data, so you can reduce random variation and bias in the data. Also, resampling the procedure many times ensures that the estimate of the test RMSE is not heavily impacted by whichever way the data is split into folds. 
+
+:::
+
+
+
 
 ### Question 8
 
@@ -228,6 +306,21 @@ Cross-validation involves mutually exclusive subsets, while bootstrapping involv
 
 :::
 
+::: {.callout-tip icon="false"}
+## Grade
+
+Grade: 2.5/5
+
+Actually, we use bootstrap resampling when we want a low variance, and cross-validation if we want low bias. Since we can run many more bootstraps than folds, we obtain a lower variance with bootstrap resampling. 
+
+:::
+
+
+
+
+
+
+
 ### Question 9 
 
 Briefly describe model tuning and why we use it.
@@ -238,6 +331,19 @@ Briefly describe model tuning and why we use it.
 Tuning is where we find the best set of hyperparameters by using the tuning function instead of manually setting our hyperparameters. This allows us to achieve the best performance for the model. 
 
 :::
+
+
+::: {.callout-tip icon="false"}
+## Grade
+
+Grade: 3.5/5
+
+This response could be more specific. Also, I used my notes. 
+Some examples of hyperparameters are learning rate, neighbors, and penalty. We train using many different hyperparameter values to find the combination that yields the best results, such as the lowest RMSE, or the highest accuracy.  
+
+:::
+
+
 
 ### Question 10 
 
@@ -256,6 +362,16 @@ What are two common performance metrics when dealing with a classification ML pr
 ## Solution
 
 Two common performance metrics when dealing with a classification ML problem are accuracy and ROC_AUC. 
+
+:::
+
+
+::: {.callout-tip icon="false"}
+## Grade
+
+Grade: 5/5
+
+Correct response, and didn't have to look at my notes.  
 
 :::
 
@@ -280,6 +396,16 @@ This is inferential because we are looking at how a specific variable (number of
 ## Solution
 
 This is predictive because we are forecasting a certain number, which is the likelihood that the customer will churn in the next month. This is not inferential because it is not answering a question about how important a certain variable is in affecting churn. It is forming a prediction for each customer. 
+
+:::
+
+
+::: {.callout-tip icon="false"}
+## Grade
+
+Grade: 5/5
+
+Correct response, and also didn't have to look at my notes for this one. 
 
 :::
 
