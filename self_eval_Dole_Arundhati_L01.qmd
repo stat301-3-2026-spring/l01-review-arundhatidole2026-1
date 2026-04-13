@@ -1,5 +1,5 @@
 ---
-title: "L01 Review"
+title: "Self Evaluation L01 Review"
 subtitle: "Data Science 3 with R (STAT 301-3)"
 author: "ARUNDHATI DOLE"
 pagetitle: "L01 ARUNDHATI DOLE"
